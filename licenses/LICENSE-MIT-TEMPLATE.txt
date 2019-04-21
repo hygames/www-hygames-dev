@@ -1,3 +1,5 @@
+/* This license pertains to the original template of the website */
+
 The MIT License (MIT)
 
 Copyright (c) 2016 Tom Johnson

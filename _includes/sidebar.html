@@ -26,15 +26,15 @@
               <a href="#">{{ subfolders.title }}</a>
               <ul>
                   {% for subfolderitem in subfolders.subfolderitems %}
-                  {% if subfolderitem.output contains "web" %}
-                  {% if subfolderitem.external_url %}
-                  <li><a href="{{subfolderitem.external_url}}" target="_blank">{{subfolderitem.title}}</a></li>
-                  {% elsif page.url == subfolderitem.url %}
-                  <li class="active"><a href="{{subfolderitem.url | remove: "/"}}">{{subfolderitem.title}}</a></li>
-                  {% else %}
-                  <li><a href="{{subfolderitem.url | remove: "/"}}">{{subfolderitem.title}}</a></li>
-                  {% endif %}
-                  {% endif %}
+                      {% if subfolderitem.output contains "web" %}
+                          {% if subfolderitem.external_url %}
+                            <li><a href="{{subfolderitem.external_url}}" target="_blank">{{subfolderitem.title}}</a></li>
+                          {% elsif page.url == subfolderitem.url %}
+                            <li class="active"><a href="{{subfolderitem.url | remove: "/"}}">{{subfolderitem.title}}</a></li>
+                          {% else %}
+                            <li><a href="{{subfolderitem.url | remove: "/"}}">{{subfolderitem.title}}</a></li>
+                          {% endif %}
+                      {% endif %}
                   {% endfor %}
               </ul>
           </li>
