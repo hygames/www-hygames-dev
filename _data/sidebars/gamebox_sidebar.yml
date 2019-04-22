@@ -1,0 +1,21 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: gamebox_sidebar
+  base_url: /gamebox
+  product: GameBox
+  version: 1.0.0
+  folders:
+
+  - title: Getting started
+    output: web, pdf
+    folderitems:
+
+    - title: Introduction
+      url: ""
+      output: web, pdf
+      type: homepage
+
+    - title: About
+      url: /about
+      output: web, pdf

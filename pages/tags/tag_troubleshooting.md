@@ -1,8 +1,7 @@
 ---
 title: "Troubleshooting pages"
 tagName: troubleshooting
-search: exclude
-permalink: tag_troubleshooting.html
+permalink: tag/troubleshooting
 sidebar: mydoc_sidebar
 folder: tags
 ---
