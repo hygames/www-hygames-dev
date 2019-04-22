@@ -1,7 +1,10 @@
-# Note:
-# If you are using the createtag script, don't leave an blank line at the end of this file.
-# In other words, the last line must be the last tag in the allowed-tags list.
+# all tags that get their own tag-pages. ID is used in the url and the name is displayed.
 allowed-tags:
-  - gamebox
-  - news
-  - troubleshooting
+  - id: gamebox
+    name: GameBox
+  - id: news
+    name: News
+  - id: getting_started
+    name: Getting started
+  - id: troubleshooting
+    name: Troubleshooting

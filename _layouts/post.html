@@ -5,18 +5,19 @@ layout: default
 
     <header class="post-header">
         <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-        <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time> {% if page.author %}<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">/ {{ page.author }}</span></span>{% endif %}{% if page.tags != null %}/
-            {% assign projectTags = site.data.tags.allowed-tags %}
-            {% for tag in page.tags %}
-            {% if projectTags contains tag %}
-            <a href="{{ "tag_" | append: tag | append: ".html"}}">{{tag}}</a>{% unless forloop.last %}, {% endunless%}
+        <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time> {% if page.author %}<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">/ {{ page.author }}</span></span>{% endif %}
+            {% if page.tags != null %}
+                /
+                {% assign projectTags = site.data.tags.allowed-tags %}
+                {% assign notFirst = false %}
+                {% for tag in projectTags %}
+                    {% if page.tags contains tag.id %}
+                        {% if notFirst %}, {% endif%}{% assign notFirst = true %}
+                        <a href="{{ 'tag/' | append: tag.id | relative_url }}">{{tag.name}}</a>
+                    {% endif %}
+                {% endfor %}
             {% endif %}
-            {% endfor %}
-            {% endif %}
-
         </p>
-
-
     </header>
 
     <div class="post-content" itemprop="articleBody">
@@ -27,7 +28,4 @@ layout: default
 
         {{ content }}
     </div>
-
-
-
 </article>

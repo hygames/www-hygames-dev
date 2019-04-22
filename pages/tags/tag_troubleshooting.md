@@ -1,8 +1,7 @@
 ---
 title: "Troubleshooting pages"
-tagName: troubleshooting
+tagID: Troubleshooting
 permalink: tag/troubleshooting
-sidebar: mydoc_sidebar
-folder: tags
+hide_sidebar: true
 ---
 {% include taglogic.html %}
