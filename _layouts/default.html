@@ -33,31 +33,34 @@
 <body>
 {% include topnav.html %}
 <!-- Page Content -->
+<div id="main">
 <div class="container">
-  <div id="main">
     <!-- Content Row -->
     <div class="row">
-        {% assign content_col_size = "col-md-offset-2, col-md-8" %}
-        {% unless page.hide_sidebar %}
+        <div class="col-md-1">
+        </div>
+        {% if page.hide_sidebar %}
+            {% assign content_col_size = "col-md-10" %}
+        {% else %}
             <!-- Sidebar Column -->
-            <div class="col-md-offset-1, col-md-3" id="tg-sb-sidebar">
+            <div class="col-md-3" id="tg-sb-sidebar">
                 {% include sidebar.html %}
             </div>
             {% assign content_col_size = "col-md-7" %}
-        {% endunless %}
+        {% endif %}
 
         <!-- Content Column -->
         <div class="{{content_col_size}}" id="tg-sb-content">
             {{content}}
         </div>
     <!-- /.row -->
-</div>
+    </div>
 <!-- /.container -->
 </div>
 <!-- /#main -->
 </div>
-{% include footer.html %}
 </body>
+{% include footer.html %}
 {% if site.google_analytics %}
 {% include google_analytics.html %}
 {% endif %}
