@@ -3,6 +3,8 @@
 topnav:
 - title: Topnav
   items:
+    - title: Discord
+      external_url: https://discord.gg/95A9TW3
     - title: GitHub
       external_url: https://github.com/hygames-team/www-hygames-co
     - title: News
