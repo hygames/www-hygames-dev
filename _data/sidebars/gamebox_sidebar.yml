@@ -7,7 +7,8 @@ entries:
   version: 1.0.0
   folders:
 
-  - title: Getting started
+  - id: getting_started
+    title: Getting started
     output: web, pdf
     folderitems:
 

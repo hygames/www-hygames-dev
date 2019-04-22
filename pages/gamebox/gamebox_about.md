@@ -6,7 +6,7 @@ tags: [getting_started, gamebox]
 summary: "GameBox is the hub for a verity of single- and multiplayer games."
 sidebar: gamebox_sidebar
 permalink: gamebox/about
-folder: gamebox
+folder: getting_started
 ---
 
 Testing

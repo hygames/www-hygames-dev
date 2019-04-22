@@ -2,12 +2,6 @@
 <html>
 <head>
     {% include head.html %}
-    {% include sidebar_logic.html %}
-    <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
-    </script>
     {% if page.datatable == true %}
     <!-- Include the standard DataTables bits -->
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.13/css/jquery.dataTables.css">
