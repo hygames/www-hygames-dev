@@ -1,3 +1,12 @@
+html {
+    min-height: 100%;
+}
+
+#main {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     font-size:15px;
 }
@@ -424,20 +433,6 @@ ul#mysidebar {
 span.projectTitle {
     font-family: Helvetica;
     font-weight: bold;
-}
-
-.footer {
-    text-align: right;
-}
-
-.footerMeta {
-    background-color: whitesmoke;
-    padding: 10px;
-    max-width: 250px;
-    border-radius: 5px;
-    margin-top: 50px;
-    font-style:italic;
-    font-size:12px;
 }
 
 img.screenshotSmall {
