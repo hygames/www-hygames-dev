@@ -1,0 +1,15 @@
+# Jekyll
+_site
+.sass-cache
+.jekyll-metadata
+*.gem
+.bundle
+vendor/bundle
+_pdf
+
+# Apple
+.DS_Store
+
+# IDE - IntellyJ
+.idea/
+**.iml
