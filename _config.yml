@@ -10,6 +10,9 @@ site_title: Hygames
 # this appears in the footer
 company_name: Hygames
 
+github_repo: https://github.com/hygames-team/www-hygames-co/
+github_org: https://github.com/hygames-team/
+
 github_editme_basepath: https://github.com/hygames-team/www-hygames-co/edit/master/
 
 # google-analytics ID
