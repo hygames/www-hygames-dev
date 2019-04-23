@@ -4,8 +4,10 @@ topnav:
 - title: Topnav
   items:
     - title: Discord
+      icon: fas fa-discord
       external_url: https://discord.gg/95A9TW3
     - title: GitHub
+      icon: fas fa-github
       external_url: https://github.com/hygames-team/www-hygames-co
     - title: News
       url: /news

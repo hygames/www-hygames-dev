@@ -20,11 +20,11 @@
                 {% for entry in topnav.topnav %}
                     {% for item in entry.items %}
                         {% if item.external_url %}
-                            <li><a href="{{ item.external_url }}" target="_blank">{{item.title}}</a></li>
+                            <li><a href="{{ item.external_url }}" target="_blank">{% if item.icon %}<i class="{{item.icon}}"></i>{% endif %}{{item.title}}</a></li>
                         {% elsif page.url contains item.url %}
-                            <li class="active"><a href="{{ item.url | relative_url }}">{{item.title}}</a></li>
+                            <li class="active"><a href="{{ item.url | relative_url }}">{% if item.icon %}<i class="{{item.icon}}"></i>{% endif %}{{item.title}}</a></li>
                         {% else %}
-                            <li><a href="{{ item.url | relative_url }}">{{item.title}}</a></li>
+                            <li><a href="{{ item.url | relative_url }}">{% if item.icon %}<i class="{{item.icon}}"></i>{% endif %}{{item.title}}</a></li>
                         {% endif %}
                     {% endfor %}
                 {% endfor %}
