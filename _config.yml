@@ -1,37 +1,29 @@
-repository: tomjoht/documentation-theme-jekyll
-
-output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
+output: web
 
-topnav_title: Hygames
 # this appears on the top navigation bar next to the home button
+topnav_title: Hygames
 
-site_title: Hygames
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
+site_title: Hygames
 
-company_name: Hygames
 # this appears in the footer
+company_name: Hygames
 
-github_editme_path: tomjoht/documentation-theme-jekyll/blob/gh-pages/
-# if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
+github_editme_basepath: https://github.com/hygames-team/www-hygames-co/edit/master/
 
-google_analytics: UA-66296557-1
-# if you have google-analytics ID, put it in. if not, edit this value to blank.
+# google-analytics ID
+#google_analytics: UA-66296557-1
 
-host: 127.0.0.1
-# the preview server used. Leave as is.
-
-port: 4000
-# the port where the preview is rendered. You can leave this as is unless you have other Jekyll builds using this same port that might cause conflicts. in that case, use another port such as 4006.
-
+# these are the files and directories that jekyll will exclude from the build
 exclude:
   - .idea/
   - .gitignore
-# these are the files and directories that jekyll will exclude from the build
 
-highlighter: rouge
 # library used for syntax highlighting
+highlighter: rouge
 
+# filter used to process markdown
 markdown: kramdown
 kramdown:
  input: GFM
@@ -39,13 +31,12 @@ kramdown:
  hard_wrap: false
  syntax_highlighter: rouge
 
-# filter used to process markdown. note that kramdown differs from github-flavored markdown in some subtle ways
-
+# collections are declared here. This renders the content in _tooltips and processes it, but doesn't output it as actual files in the output unless you change output to true
 collections:
   tooltips:
     output: false
-# collections are declared here. this renders the content in _tooltips and processes it, but doesn't output it as actual files in the output unless you change output to true
 
+# defaults for front matter
 defaults:
   -
     scope:
@@ -53,18 +44,19 @@ defaults:
       type: "pages"
     values:
       layout: "page"
-      comments: true
-      search: true
-      sidebar: home_sidebar
       topnav: topnav
+  -
+    scope:
+      path: "pages/gamebox"
+      type: "pages"
+    values:
+      editme: true
   -
     scope:
       path: ""
       type: "tooltips"
     values:
       layout: "page"
-      comments: true
-      search: true
       tooltip: true
 
   -
@@ -73,16 +65,8 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      comments: true
-      search: true
-      sidebar: home_sidebar
       topnav: topnav
 
-# these are defaults used for the frontmatter for these file types
-
 sidebars:
-- home_sidebar
-- mydoc_sidebar
-- product1_sidebar
-- product2_sidebar
+- gamebox_sidebar
 - other
