@@ -13,7 +13,7 @@ company_name: Hygames
 github_editme_basepath: https://github.com/hygames-team/www-hygames-co/edit/master/
 
 # google-analytics ID
-#google_analytics: UA-66296557-1
+google_analytics: UA-90624848-2
 
 # these are the files and directories that jekyll will exclude from the build
 exclude:
