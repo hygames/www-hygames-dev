@@ -1,6 +1,3 @@
-$('#mysidebar').height($(".nav").height());
-
-
 $( document ).ready(function() {
 
     //this script says, if the height of the viewport is greater than 800px, then insert affix class, which makes the nav bar float in a fixed
