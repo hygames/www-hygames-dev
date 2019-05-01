@@ -36,6 +36,9 @@ kramdown:
 
 # collections are declared here. This renders the content in _tooltips and processes it, but doesn't output it as actual files in the output unless you change output to true
 collections:
+  posts:
+    output: true
+    permalink: /:year/:short_month/:title/
   tooltips:
     output: false
 
