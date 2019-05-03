@@ -2,15 +2,12 @@
 title: News
 sidebar: does_not_exist
 keywords: news, blog, updates, release notes, announcements
-permalink: news_archive.html
+permalink: news_archive
 toc: false
 ---
 
 <div class="home">
-
     <div class="post-list">
-
-
     <section id="archive">
         <h3>This year's posts</h3>
         {%for post in site.posts %}
@@ -25,7 +22,7 @@ toc: false
                 <ul class="past">
             {% endif %}
             {% endunless %}
-            <li><time>{{ post.date | date:"%d %b" }}</time><a href="{{ post.url | remove: "/"}}">{{ post.title }}</a></li>
+            <li><time>{{ post.date | date:"%d %b" }}</time><a href="{{ post.url }}">{{ post.title }}</a></li>
             {% endfor %}
         </ul>
     </section>
