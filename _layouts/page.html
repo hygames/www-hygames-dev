@@ -1,48 +1,24 @@
 ---
 layout: default
 ---
-
-<div class="post-header">
-   <h1 class="post-title-main">{{ page.title }}</h1>
-</div>
-
-{% if page.simple_map == true %}
-
-<script>
-    $(document).ready ( function(){
-        $('.box{{page.box_number}}').addClass('active');
-    });
-</script>
-
-{% include custom/{{page.map_name}}.html %}
-
-{% elsif page.complex_map == true %}
-
-<script>
-    $(document).ready ( function(){
-        $('.modalButton{{page.box_number}}').addClass('active');
-    });
-</script>
-
-{% include custom/{{page.map_name}}.html %}
-
-{% endif %}
+{%- unless page.no_header == true -%}
+    <div class="post-header">
+       <h1 class="post-title-main">{{ page.title }}</h1>
+    </div>
+{%- endunless -%}
 
 <div class="post-content">
-
-   {% if page.summary %}
-    <div class="summary">{{page.summary}}</div>
-   {% endif %}
-
+    {% if page.summary %}
+        <div class="summary">{{page.summary}}</div>
+    {% endif %}
     {% unless page.toc == false %}
         <div id="toc"></div>
     {% endunless %}
-
     {% if page.editme %}
         <a target="_blank" href="{{site.github_editme_basepath}}{{page.path}}" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Help improving me</a>
     {% endif %}
 
-   {{content}}
+    {{content}}
 
     <div class="tags">
         {% if page.tags != null %}

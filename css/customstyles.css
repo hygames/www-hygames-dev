@@ -1061,6 +1061,9 @@ div.box.box1 {
     margin: 0px 10px;
 }
 
+img.docimage {
+    width: 100%;
+}
 
 #userMap .btn-lg .active {
     background-color: #d6f5d6;
