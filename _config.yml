@@ -58,7 +58,7 @@ defaults:
       type: "docs"
     values:
       editme: true
-      layout: "page"
+      layout: "docs"
       topnav: topnav
   -
     scope:

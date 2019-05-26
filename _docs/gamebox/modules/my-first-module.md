@@ -36,6 +36,8 @@ Modules are written in Java. For development the GameBox code is needed as a dep
 </project>
 ```
 
+A module's entry point is a class extending ```co.hygames.gamebox.module.GameBoxModule```. This is the only class that is mandatory for a module.
+
 {% include important.html content="Your module needs a *module.json* file with at least a unique id and a valid version! GameBox modules have to use [semantic versioning](https://semver.org/){: target='_blank'}." %}
 
 ## Starter module
@@ -47,3 +49,5 @@ In the future there will be a started module available that can be used to start
 Simply drop your `.jar` into the modules folder and reload GameBox.
 
 ## Publish to the cloud
+
+**WIP**
