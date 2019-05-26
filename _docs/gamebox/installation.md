@@ -1,12 +1,12 @@
 ---
-title: Introduction
+title: Installation
 keywords: gamebox
 last_updated: April 22, 2019
 tags: [getting_started, gamebox]
-summary: "GameBox is the hub for a verity of single- and multiplayer games."
+summary: "**WIP**"
 sidebar: gamebox_sidebar
-permalink: gamebox
+permalink: gamebox/installation
 folder: getting_started
 ---
 
-Intro
+Testing

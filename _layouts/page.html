@@ -9,14 +9,14 @@ layout: default
 
 <div class="post-content">
     {% if page.summary %}
-        <div class="summary">{{page.summary}}</div>
+        <div class="summary">{{ page.summary | markdownify }}</div>
+    {% endif %}
+    {% if page.editme %}
+    <a target="_blank" href="{{site.github_editme_basepath}}{{page.path}}" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Help improving me</a>
     {% endif %}
     {% unless page.toc == false %}
         <div id="toc"></div>
     {% endunless %}
-    {% if page.editme %}
-        <a target="_blank" href="{{site.github_editme_basepath}}{{page.path}}" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Help improving me</a>
-    {% endif %}
 
     {{content}}
 

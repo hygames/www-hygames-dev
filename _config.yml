@@ -36,33 +36,26 @@ collections:
   posts:
     output: true
     permalink: /:year/:short_month/:title/
+  docs:
+    output: true
 
 # defaults for front matter
 defaults:
   -
     scope:
-      path: ""
-      type: "pages"
+      path: "pages"
     values:
       layout: "page"
       topnav: topnav
   -
     scope:
-      path: "pages/gamebox"
-      type: "pages"
+      type: "docs"
     values:
       editme: true
-  -
-    scope:
-      path: ""
-      type: "tooltips"
-    values:
       layout: "page"
-      tooltip: true
-
+      topnav: topnav
   -
     scope:
-      path: ""
       type: "posts"
     values:
       layout: "post"
@@ -70,4 +63,3 @@ defaults:
 
 sidebars:
 - gamebox_sidebar
-- other

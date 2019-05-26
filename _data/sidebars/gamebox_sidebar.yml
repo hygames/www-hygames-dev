@@ -12,11 +12,26 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Introduction
+    - title: What is GameBox?
       url: ""
       output: web, pdf
       type: homepage
 
-    - title: About
-      url: /about
+    - title: Installation
+      url: /installation
       output: web, pdf
+
+  - id: modules
+    title: Modules
+    output: web, pdf
+    folderitems:
+
+      - title: Concept
+        url: /modules
+        output: web, pdf
+        type: homepage
+
+      - title: My first Module
+        url: /modules/my-first-module
+        output: web, pdf
+        type: homepage
