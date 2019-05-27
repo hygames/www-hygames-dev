@@ -35,3 +35,18 @@ entries:
         url: /modules/my-first-module
         output: web, pdf
         type: homepage
+
+  - id: settings
+    title: Settings
+    output: web, pdf
+    folderitems:
+
+      - title: Config file
+        url: /settings/config-file
+        output: web, pdf
+        type: homepage
+
+      - title: Modules file
+        url: /settings/modules-file
+        output: web, pdf
+        type: homepage
