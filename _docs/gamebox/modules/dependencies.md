@@ -5,10 +5,11 @@ last_updated: April 22, 2019
 tags: [modules, gamebox]
 summary: "Modules can depend on specific versions of GameBox or other modules. "
 sidebar: gamebox_sidebar
-toc: false
 permalink: gamebox/modules/dependencies
 folder: modules
 ---
+
+## Declaration
 
 Module dependencies are declared in its `module.json` file. A list of dependencies can be given where each entry defines a specific module by its ID and optionally constrains the needed version to some version range. Modules can use the module ID `gamebox` to depend on a specific version of GameBox.
 
@@ -34,7 +35,7 @@ The setting `versionConstrain` can be a list of several constrains that can use 
 2. `<` - any version the specified one is an update to
 3. `>=` - the specified version or any update of it
 4. `<=` - the specified version or any previous one
-5. `=`, ` ` - no operator or an equal sign asks for the given specific version
+5. `=`, `" "` - an equal sign (or no operator) asks for the given specific version
 6. `~>` - The [Twiddle Wakka](https://thoughtbot.com/blog/rubys-pessimistic-operator){: target="_blank"}
 
 
