@@ -26,13 +26,18 @@ entries:
     output: web, pdf
     folderitems:
 
-      - title: Concept
+      - title: General
         url: /modules
         output: web, pdf
         type: homepage
 
       - title: My first Module
         url: /modules/my-first-module
+        output: web, pdf
+        type: homepage
+
+      - title: Dependencies
+        url: /modules/dependencies
         output: web, pdf
         type: homepage
 
