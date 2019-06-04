@@ -38,11 +38,11 @@ Modules are written in Java. For development the GameBox code is needed as a dep
 
 A module's entry point is a class extending ```co.hygames.gamebox.module.GameBoxModule```. This is the only class that is mandatory for a module.
 
-{% include important.html content="Your module needs a *module.json* file with at least a unique id and a valid version! GameBox modules have to use [semantic versioning](https://semver.org/){: target='_blank'}. See [versioning](#versioning)." %}
+{% include important.html content="Your module needs a *module.yml* file with at least a unique id and a valid version! GameBox modules have to use [semantic versioning](https://semver.org/){: target='_blank'}, as explained further down in [versioning](#versioning)." %}
 
 ## Starter module
 
-In the future there will be a started module available that can be used to start working on a new module.
+In the future there will be a starter module available that can be used to begin developing a new module.
 
 ## Locally testing your module
 
@@ -54,13 +54,13 @@ Modules need to follow [semantic versioning](https://semver.org/){: target='_bla
 
 The gist of semantic versioning is as follows:
 
-Given a version number MAJOR.MINOR.PATCH, increment the:
+    Given a version number MAJOR.MINOR.PATCH, increment the:
 
-1. MAJOR version when you make incompatible API changes,
-2. MINOR version when you add functionality in a backwards-compatible manner, and
-3. PATCH version when you make backwards-compatible bug fixes.
+    1. MAJOR version when you make incompatible API changes,
+    2. MINOR version when you add functionality in a backwards-compatible manner, and
+    3. PATCH version when you make backwards-compatible bug fixes.
 
-Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
+    Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
 
 Following these rules is especially important for modules that might be used as dependencies for other modules. In this case the author writing the second module will constrain the dependency version to a range of versions based on semantic versioning. For more informantion on how to declare dependencies for your modules read [Module dependencies]({{ '/gamebox/modules/dependencies' | relative_url }}).
 

@@ -148,3 +148,7 @@ li.sidebarTitle {
 .navbar-inverse .navbar-toggle {
     border-color: #015CAE;
 }
+
+#mysidebar li ul li a {
+    margin-left: 10px;
+}

@@ -4,7 +4,7 @@ entries:
 - title: gamebox_sidebar
   base_url: /gamebox
   product: GameBox
-  version: 1.0.0
+  version: 0.0.1
   folders:
 
   - id: getting_started
@@ -12,7 +12,7 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: What is GameBox?
+    - title: About GameBox
       url: ""
       output: web, pdf
       type: homepage
