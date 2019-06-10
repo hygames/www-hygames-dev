@@ -9,4 +9,4 @@ permalink: gamebox/installation
 folder: getting_started
 ---
 
-Testing
+{% include note.html content="At the moment this is a placeholder. As soon as we have more information on the server software for Hytale this site will be updated." %}

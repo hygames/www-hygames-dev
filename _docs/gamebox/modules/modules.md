@@ -13,7 +13,7 @@ folder: modules
 
 GameBox modules can be installed to add functionality like for example games. Anyone can write a module and make it available for the public by uploading it on the GameBox cloud.
 
-The currently installed modules can be found in a subfolder inside the `modules` folder. The name of the subfolder is the id of the module and usually closely represents the module name (without spaces and other special characters). For a list of currently installed modules you can check the file `modules.yml` in the `modules` folder.
+The currently installed modules can be found in the `modules` folder. Module data like configuration or other custom files can be found in subfolders of the `module` folder. The name of the module's data folder usually is the id of the module and should closely represents the module name. For a list of currently installed modules you can check the file `modules.yml` in the `modules` folder.
 
 
 ## The module cloud
@@ -25,7 +25,7 @@ The module cloud contains publicly available modules. It makes installation a lo
 
 Modules can be manually installed or via the [module cloud](#the-module-cloud).
 
-Since there is no vetting of modules from third parties, please be careful and backup your server before installing modules. Try to inform yourself about the function of the module beforehand.
+Since there is no vetting of modules from third parties, please be careful and backup your server before installing modules. You should inform yourself about the function of the module beforehand.
 
 
 ### From the cloud
