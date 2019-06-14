@@ -40,9 +40,9 @@ A module's entry point is a class extending ```co.hygames.gamebox.module.GameBox
 
 {% include important.html content="Your module needs a *module.yml* file with at least a unique id and a valid version! GameBox modules have to use [semantic versioning](https://semver.org/){: target='_blank'}, as explained further down in [versioning](#versioning)." %}
 
-## Starter module
+## Template module
 
-In the future there will be a starter module available that can be used to begin developing a new module.
+[A template module](https://github.com/hygames-team/gamebox-module-template){: target='_blank'} is available on GitHub. The code can be used as a basis for any of your own modules.
 
 ## Locally testing your module
 
