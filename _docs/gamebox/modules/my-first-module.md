@@ -50,19 +50,19 @@ Simply drop your `.jar` into the modules folder and reload GameBox.
 
 ## Versioning
 
-Modules need to follow [semantic versioning](https://semver.org/){: target='_blank'}, as does GameBox. If a module's version is not semantic, it will not load!
+Modules need to follow [semantic versioning](https://semver.org/){: target='_blank'}, as does GameBox. If a module's version is not semantic, it will not load! This is to ensure correct dependency version constrains.
 
 The gist of semantic versioning is as follows:
 
-    Given a version number MAJOR.MINOR.PATCH, increment the:
+>Given a version number MAJOR.MINOR.PATCH, increment the:
+>
+>1. MAJOR version when you make incompatible API changes,
+>2. MINOR version when you add functionality in a backwards-compatible manner, and
+>3. PATCH version when you make backwards-compatible bug fixes.
+>
+>Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
 
-    1. MAJOR version when you make incompatible API changes,
-    2. MINOR version when you add functionality in a backwards-compatible manner, and
-    3. PATCH version when you make backwards-compatible bug fixes.
-
-    Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
-
-Following these rules is especially important for modules that might be used as dependencies for other modules. In this case the author writing the second module will constrain the dependency version to a range of versions based on semantic versioning. For more informantion on how to declare dependencies for your modules read [Module dependencies]({{ '/gamebox/modules/dependencies' | relative_url }}).
+Following these rules is especially important for modules that might be used as dependencies for other modules. In this case the author writing the second module will constrain the dependency version to a range of versions based on semantic versioning. For more information on how to declare dependencies for your modules read [Module dependencies]({{ '/gamebox/modules/dependencies' | relative_url }}).
 
 ## Publish to the cloud
 
