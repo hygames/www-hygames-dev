@@ -5,7 +5,7 @@ summary: "The website is ready to present updates and documentation for Hygames 
 tags: [news]
 ---
 
-The website is now ready to keep everyone updated on the state of Hygames and the different projects. Documentation on the first project [GameBox]({{ '/gamebox' | relative_url }}) will be kept up to date alongside development.
+The website is now ready to keep everyone updated on the state of Hygames and the different projects. Documentation on the first project, [GameBox]({{ '/gamebox' | relative_url }}), will be kept up to date alongside development.
 
 For the moment there will not be much activity on this website as Hytale is still in development. You can check out their [blog](https://hytale.com/news){: target="_blank"} to see the current state of the game. There are already a few cool sneak peeks about the different worlds, environments and modes that will be awaiting us on release.
 
