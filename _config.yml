@@ -7,10 +7,10 @@ topnav_title: Hygames
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 site_title: Hygames
 
-github_repo: https://github.com/hygames-team/www-hygames-co/
-github_org: https://github.com/hygames-team/
+github_repo: https://github.com/hygames/www-hygames-dev/
+github_org: https://github.com/hygames/
 
-github_editme_basepath: https://github.com/hygames-team/www-hygames-co/edit/master/
+github_editme_basepath: https://github.com/hygames/www-hygames-dev/edit/master/
 
 # google-analytics ID
 google_analytics: UA-90624848-2
