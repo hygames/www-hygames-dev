@@ -6,7 +6,7 @@ topnav:
     - title: Discord
       external_url: http://discord.hygames.co
     - title: GitHub
-      external_url: https://github.com/hygames-team
+      external_url: https://github.com/hygames
     - title: News
       url: /news
 

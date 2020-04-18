@@ -19,6 +19,6 @@ Files can be automatically loaded from either the language directory of the modu
 
 {% include note.html content='At the moment [ModuleLanguage] loads the "lang_en.yml" file from the jar as a first default language.' %}
 
-An example using Enums to make all messages easily accessible can be seen in the [template module](https://github.com/hygames-team/gamebox-module-template/blob/master/src/main/java/co/hygames/gamebox/modules/template/TemplateLanguage.java).
+An example using Enums to make all messages easily accessible can be seen in the [template module](https://github.com/hygames/gamebox-module-template/blob/master/src/main/java/co/hygames/gamebox/modules/template/TemplateLanguage.java).
 
-[ModuleLanguage]: https://github.com/hygames-team/gamebox/blob/master/src/main/java/co/hygames/gamebox/language/ModuleLanguage.java
+[ModuleLanguage]: https://github.com/hygames/gamebox/blob/master/src/main/java/co/hygames/gamebox/language/ModuleLanguage.java

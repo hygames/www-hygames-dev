@@ -42,7 +42,7 @@ A module's entry point is a class extending ```co.hygames.gamebox.module.GameBox
 
 ## Template module
 
-[A template module](https://github.com/hygames-team/gamebox-module-template){: target='_blank'} is available on GitHub. The code can be used as a basis for any of your own modules.
+[A template module](https://github.com/hygames/gamebox-module-template){: target='_blank'} is available on GitHub. The code can be used as a basis for any of your own modules.
 
 ## Locally testing your module
 
